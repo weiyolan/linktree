@@ -8,6 +8,27 @@
       "when": 1707158373552,
       "tag": "0000_thick_annihilus",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1707210435828,
+      "tag": "0001_square_mister_fear",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1707214809059,
+      "tag": "0002_first_saracen",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1707216317436,
+      "tag": "0003_wakeful_jack_flag",
+      "breakpoints": true
     }
   ]
 }

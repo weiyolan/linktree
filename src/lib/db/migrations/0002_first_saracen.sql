@@ -1,0 +1,1 @@
+ALTER TABLE `pages` ADD `description` varchar(256) NOT NULL;
