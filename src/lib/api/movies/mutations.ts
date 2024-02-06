@@ -30,9 +30,9 @@ export const updateMovie = async (id: MovieId, movie: UpdateMovieParams) => {
   const newMovie = updateMovieSchema.parse({ ...movie, userId: session?.user.id! });
   try {
     await db
-     .update(movies)
-     .set({...newMovie, updatedAt: new Date() })
-     .where(and(eq(movies.id, movieId!), eq(movies.userId, session?.user.id!)))
+      .update(movies)
+      .set(newMovie)
+      .where(and(eq(movies.id, movieId!), eq(movies.userId, session?.user.id!)));
     return {success: true}
   } catch (err) {
     const message = (err as Error).message ?? "Error, please try again";
