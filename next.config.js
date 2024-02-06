@@ -2,6 +2,12 @@
 const nextConfig = {
   experimental: {
     serverActions: true,
+    serverComponentsExternalPackages: [
+      "resend",
+      // '@react-email/components',
+      // '@react-email/render',
+      // '@react-email/tailwind'
+    ],
   },
 };
 
