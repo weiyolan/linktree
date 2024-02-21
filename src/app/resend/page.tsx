@@ -28,6 +28,8 @@ export default function Home() {
           "Content-Type": "application/json",
         },
       });
+      const test = await req.json();
+      console.log(test);
       const { id } = await req.json();
       if (id) alert("Successfully sent!");
     } catch (err) {

@@ -8,7 +8,8 @@ export async function POST(request: Request) {
   const { name, email } = emailSchema.parse(body);
   try {
     const data = await resend.emails.send({
-      from: "ywdesign <hello@ywdesign.co>",
+      // from: "hello@ywdesign.co",
+      from: "Yolan <hello@resend.dev>",
       to: [email],
       subject: "Hello world!",
       react: EmailTemplate({ firstName: name }),
